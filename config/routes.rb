@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :admins
 
-  devise_scope :admin do
-    authenticated :admin do
+  devise_scope :user do
+    authenticated :user do
       root 'pages#dashboard', as: :authenticated_root
     end
 
