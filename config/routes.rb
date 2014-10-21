@@ -11,7 +11,11 @@ Rails.application.routes.draw do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
+
   get "dashboard" => "pages#dashboard"
+
+  get "createstudent" => "pages#createstudent"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

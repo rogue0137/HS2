@@ -7,8 +7,14 @@ class PagesController < ApplicationController
 	end 
 
 	def resource_name
-:user
-end
+		:user
+	end
+
+	def createuser
+	end
+
+	def manageuser
+	end
 
 def resource
 @resource ||= User.new
