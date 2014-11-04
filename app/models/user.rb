@@ -26,13 +26,3 @@ class User < ActiveRecord::Base
         format: { with: /\A[a-zA-Z0-9]*\z/, message: "May only contain letters and numbers." }
 
 end
-
-class AddAdminToUsers < ActiveRecord::Migration
-  def self.up
-    add_column :users, :admin, :boolean, :default => false
-  end
-
-  def self.down
-    remove_column :users, :admin
-  end
-end
